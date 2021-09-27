@@ -102,8 +102,8 @@ if(isset($_POST['login'])){
 
 }elseif(isset($_POST['updateEventUI'])){
     $cart_id = $_POST['cart_id'];
-    $act1 = $_POST['act_id1'];
-    $act2 = $_POST['act_id2'];
+    $act1 = $_POST['act1'];
+    $act2 = $_POST['act2'];
 
     $functionObj->update_cart_item($cart_id,$act1,$act2);
 

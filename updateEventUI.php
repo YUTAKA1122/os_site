@@ -10,6 +10,7 @@ $item_id = $cart_data['item_id'];
 $event_id = $cart_data['event_id'];
 $actsOfEvent = $functionObj->read_activities($event_id);
 $user_id = $cart_data['user_id'];
+$cart_id = $cart_data['cart_id'];
 
 ?>
 
@@ -89,7 +90,7 @@ $user_id = $cart_data['user_id'];
                             ?>
                                     <div class="card col-3 mt-3">
                                         <div class="card-header">
-                                            <input type="radio" åname="act2" id="" value=<?php echo $row['act_id'] ?> class="radio form-check-input"> <?php echo $row['aname']; ?><br>
+                                            <input type="radio" name="act2" id="" value=<?php echo $row['act_id'] ?> class="radio form-check-input" required> <?php echo $row['aname']; ?><br>
                                         </div>
                                         <div class="card-footer text-center">
                                             <?php echo $count2 . " / " . $row['capacity']; ?>
@@ -118,7 +119,7 @@ $user_id = $cart_data['user_id'];
                                             } else {
                                             ?>
 
-                                                <input type="radio" name="act1" id="" value=<?php echo $row['act_id'] ?> class="radio form-check-input"> <?php echo $row['aname']; ?><br>
+                                                <input type="radio" name="act1" id="" value=<?php echo $row['act_id'] ?> class="radio form-check-input" required> <?php echo $row['aname']; ?><br>
                                             <?php
                                             }
                                             ?>
@@ -134,13 +135,14 @@ $user_id = $cart_data['user_id'];
                         } ?>
                     </div>
 
-                </form>
 
 
                 </table>
                 <div class="row text-center">
                     <button type="submit" name="updateEventUI" class="btn btn-primary mt-3 col-6">UPDATE</button>
                     <a href="eventlistUI.php" class="btn btn-dark mt-3 col-6">Back</a>
+                    </form>
+
                 </div>
             </div>
         </div>

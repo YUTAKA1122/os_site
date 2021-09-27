@@ -287,7 +287,7 @@ class Functions extends Database{
     }
 
     function read_user_cart_items($id){
-        $sql = "SELECT * FROM cart INNER JOIN items ON cart.item_id = items.item_id WHERE cart.user_id = '$id'";
+        $sql = "SELECT * FROM cart INNER JOIN items ON cart.item_id = items.item_id WHERE cart.user_id = '$id' ORDER BY idate";
         $result = $this->conn->query($sql);
 
         if($result->num_rows>0){
