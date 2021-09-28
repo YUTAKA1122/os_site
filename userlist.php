@@ -33,7 +33,7 @@ $userlist = $functionObj->read_users();
                         ROLE:<?php echo $row['role'];?><br>
                     </div>
                     <div class="card-body text-center">
-                        <a href="update_user.php?user_id=<?php echo $id?>" class="btn btn-primary w-75">Update User</a>
+                        <a href="updateUser.php?user_id=<?php echo $id?>" class="btn btn-primary w-75">Update User</a>
                         <a href="userDeleteCheck.php?user_id=<?php echo $id?>" class="btn btn-danger w-75">Delete User</a>
                     </div>                    
                 </div>

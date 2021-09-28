@@ -54,15 +54,15 @@ class Functions extends Database{
         }else{
             return FALSE;
         }
-
     }
 
+
     function update_user($lname,$fname,$email,$id){
-        $sql = "UPDATE users SET lname = '$lname', fname = '$fname',email = 'email', WEHRE user_id = '$id'";
+        $sql = "UPDATE users SET lname = '$lname', fname = '$fname', email = '$email' WHERE user_id = '$id' ";
         $result = $this->conn->query($sql);
 
         if($result == TRUE){
-            header('location:index.html');
+            header('location:userlist.php');
         }else{
             die('ERROR: '.$this->conn->error);
         }
@@ -89,7 +89,7 @@ class Functions extends Database{
         if($result->num_rows == 1){
             return $result->fetch_assoc();
         }else{
-            echo " ";
+            header('location:userlist.php');
         }
 
     }
@@ -205,7 +205,7 @@ class Functions extends Database{
         if($result->num_rows == 1){
             return $result->fetch_assoc();
         }else{
-            echo "no data detected";
+            echo " detected";
         }
 
     }
@@ -342,7 +342,6 @@ class Functions extends Database{
         if($result->num_rows == 1){
             return $result->fetch_assoc();
         }else{
-            echo "no data detected";
         }
 
     }

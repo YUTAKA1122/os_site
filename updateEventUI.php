@@ -65,7 +65,7 @@ $cart_id = $cart_data['cart_id'];
                                     <div class="card col-3 mt-3">
                                         <div class="card-header">
                                             <?php
-                                            if ($capa1['capacity'] - $count1 == 0) {
+                                            if ($capa1['capacity'] - $count1 == 0 AND $cart_data['act_id1'] != $row['act_id']) {
                                                 echo $row['aname'];
                                             } else {
                                             ?>
@@ -114,7 +114,7 @@ $cart_id = $cart_data['cart_id'];
                                     <div class="card col-3 mt-3">
                                         <div class="card-header">
                                             <?php
-                                            if ($capa1['capacity'] - $count1 == 0) {
+                                            if ($capa1['capacity'] - $count1 == 0 AND $cart_data['act_id1'] != $row['act_id']) {
                                                 echo $row['aname'];
                                             } else {
                                             ?>

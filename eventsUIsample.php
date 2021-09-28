@@ -75,7 +75,7 @@ $act_2 = $functionObj->get_one_act($cart['act_id2']);
                                 <td><?php echo $act_2['aname'] ?></td>
                                 <td>
                                     <a href="updateEventUI.php?cart_id=<?php echo $cart['cart_id'] ?>" class="btn btn-dark  ">Update</a>
-                                    <a href="removeCheck.php?cart_id=<?php echo $cart_id ?>" class="btn btn-dark  ">Cancel</a>
+                                    <a href="removeCheck.php?cart_id=<?php echo $cart['cart_id']  ?>" class="btn btn-dark  ">Cancel</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -97,7 +97,7 @@ $act_2 = $functionObj->get_one_act($cart['act_id2']);
                                 <td><?php echo $act_1['aname'] ?></td>
                                 <td>
                                 <a href="updateEventUI.php?cart_id=<?php echo $cart['cart_id'] ?>" class="btn btn-dark  ">Update</a>
-                                    <a href="removeCheck.php?cart_id=<?php echo $cart_id ?>" class="btn btn-dark  ">Cancel</a>
+                                    <a href="removeCheck.php?cart_id=<?php echo $cart['cart_id']  ?>" class="btn btn-dark  ">Cancel</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -107,8 +107,9 @@ $act_2 = $functionObj->get_one_act($cart['act_id2']);
             } else {
                 foreach ($items as $row) :
                     $id = $row['item_id'];
+                    $cnt = $functionObj->count_items($id);
                 ?>
-                    <div class="col-3">
+                    <div class="col-4">
                         <div class="card mt-3">
                             <div class="card-header">
                                 DATE:<?php echo $row['idate']; ?><br>
@@ -117,6 +118,10 @@ $act_2 = $functionObj->get_one_act($cart['act_id2']);
                                 <?php
                                 echo "<a href='activitiesUI.php?item_id=$id' class='btn btn-primary w-75'>Details & Reservation</a>";
                                 ?>
+
+                            </div>
+                            <div class="card-fotter text-center">
+                                <?php echo $cnt." / ".$row['capacity'];?>
 
                             </div>
                         </div>

@@ -24,13 +24,13 @@ include "navbarUI.php"
 
 
     <div class="container-fluid">
-        <table class="table">
+        <table class="table text-center">
             <thead class="thead-dark">
                 <th>Event name</th>
                 <th>Date</th>
                 <th>Activity1</th>
                 <th>Activity2</th>
-                <th>Option</th>
+                <th colspan = "2">Option</th>
             </thead>
             <tbody>
                 <?php

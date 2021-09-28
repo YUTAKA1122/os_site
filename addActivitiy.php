@@ -34,6 +34,15 @@ include 'navbar.php';
             <div class="card-body">
                 <form action="" method="post">
                     <table class="mx-auto">
+                    <tr>
+                            <td>
+                                <p>Event Name</p>
+                            </td>
+                            <td>
+                                <p><?php echo $data['iname'] ?></p>
+                            </td>
+                        </tr>
+
                         <tr>
                             <td>
                                 <label for="aname">Activity Name</label>

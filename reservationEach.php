@@ -23,7 +23,7 @@ $userReservelist = $functionObj->get_event_cart_items($item_id);
   <?php
   include 'navbar.php';
   ?>
-  <div class="container-fluid">
+  <div class="container-fluid col-10">
     <table class="table text-center">
       <thead>
         <th>Cart ID</th>

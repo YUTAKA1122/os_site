@@ -107,6 +107,14 @@ if(isset($_POST['login'])){
 
     $functionObj->update_cart_item($cart_id,$act1,$act2);
 
+}elseif(isset($_POST['updateUser'])){
+    $lname = $_POST['lname'];
+    $fname = $_POST['fname'];
+    $email = $_POST['email'];
+    $id = $_POST['id'];
+
+    $functionObj->update_user($lname,$fname,$email,$id);
+
 }
 
 
