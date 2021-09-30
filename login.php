@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Coming Soon - Start Bootstrap Theme</title>
+    <title>Login</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@
                         <div class="col"><input class="form-control" name="password" id="password" type="password" placeholder="Enter your password..." aria-label="Enter your password..." data-sb-validations="required,password" /></div>
                             <div class="col-auto"><button class="btn btn-primary" name="login" id="submitButton" type="submit">Login</button></div>
                             <h1 class="fst-italic lh-1 mt-4">Resister</h1>
-                <p class="mb-1">If you don't have any account with us, please register below.</p>
+                <p class="mb-1">If you don't have any account, please make one or go back to <a href="indexUser.php">Top Page</a>.</p>
                             <a href="registerUser.php" class="col-auto btn btn-primary">Register</a>
 
 
@@ -55,7 +55,7 @@
                 <!-- <h1 class="fst-italic lh-1 mt-4">Resister</h1>
                 <p class="mb-1">If you don't have any account with us, please register below.</p>
                 <form action="" method="post" id="register" data-sb-form-api-token="API_TOKEN">
-                    <!-- Email address input
+                     Email address input
                     <div class="input-group-newsletter">
                         <div class="row">
                         <div class="col"><input class="form-control" name="lname" id="lname" type="text" placeholder="Enter your Family name" aria-label="Enter your Family name" required /></div>

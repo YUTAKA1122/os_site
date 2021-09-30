@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Coming Soon - Start Bootstrap Theme</title>
+    <title>Register</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 
 
                 <h1 class="fst-italic lh-1 mt-4">Resister</h1>
-                <p class="mb-1">If you don't have any account with us, please register below.</p>
+                <p class="mb-1">Please make your account below, or go back to <a href="indexUser.php">Top Page</a>.</p>
                 <form action="" method="post" id="register" data-sb-form-api-token="API_TOKEN">
                     <div class="input-group-newsletter">
                         <div class="row">

@@ -14,7 +14,7 @@ $data = $functionObj-> get_one_item($id);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update</title>
+    <title>Update an item</title>
                 <!-- Bootstrap CSS v5.0.2 -->
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -33,7 +33,7 @@ include 'navbar.php';
             </div>
             <div class="card-body">
                 <form action="action.php?id=<?php echo $id?>" method="post">
-                    <table>
+                    <table class="table text-center">
                         <tr>
                             <td>
                                 <label for="iname">NAME</label>

@@ -16,7 +16,7 @@ $fname = $_SESSION['fname'];
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Start Open School</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -32,7 +32,7 @@ $fname = $_SESSION['fname'];
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+            <a class="navbar-brand" href="#page-top"><img src="assets/os_barner.PNG" style="height:2rem;" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ms-1"></i>
@@ -40,17 +40,16 @@ $fname = $_SESSION['fname'];
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articles">What's NEW</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">This Year</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <?php
-                    if($id == 0){
-
-                    }else{
-                        ?>
-                    <li class="nav-item"><a class="nav-link text-primary" href="eventlistUI.php">Reservation</a></li>
-                    <li class="nav-item"><a class="nav-link text-info" href="logout.php">Logout</a></li>
+                    if ($id == 0) {
+                    } else {
+                    ?>
+                        <li class="nav-item"><a class="nav-link text-primary" href="eventlistUI.php">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link text-info" href="logout.php">Logout</a></li>
                     <?php
                     }
                     ?>
@@ -82,15 +81,15 @@ $fname = $_SESSION['fname'];
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/first.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <?php
-                            if($id == 0){
+                            if ($id == 0) {
                                 echo "<h4>First Meeting</h4>";
-                            }else{
+                            } else {
                             ?>
-                            <h4><a href="eventsUIsample.php?item_id=1">First Meeting</a></h4>
+                                <h4><a href="eventsUI.php?item_id=1">First Meeting</a></h4>
                             <?php
                             }
                             ?>
@@ -106,12 +105,12 @@ $fname = $_SESSION['fname'];
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                        <?php
-                            if($id == 0){
+                            <?php
+                            if ($id == 0) {
                                 echo "<h4>Open School</h4>";
-                            }else{
+                            } else {
                             ?>
-                            <h4><a href="eventsUIsample.php?item_id=2">Open School</a></h4>
+                                <h4><a href="eventsUI.php?item_id=2">Open School</a></h4>
                             <?php
                             }
                             ?>
@@ -126,12 +125,12 @@ $fname = $_SESSION['fname'];
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                        <?php
-                            if($id == 0){
+                            <?php
+                            if ($id == 0) {
                                 echo "<h4>Check & Challenge Exams!</h4>";
-                            }else{
+                            } else {
                             ?>
-                            <h4><a href="eventsUIsample.php?item_id=3">Check & Challenge Exams!</a></h4>
+                                <h4><a href="eventsUI.php?item_id=3">Check & Challenge Exams!</a></h4>
                             <?php
                             }
                             ?>
@@ -143,19 +142,19 @@ $fname = $_SESSION['fname'];
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                        <?php
-                            if($id == 0){
+                            <?php
+                            if ($id == 0) {
                                 echo "<h4>Entrance Exams</h4>";
-                            }else{
+                            } else {
                             ?>
-                            <h4><a href="#">Entrance Exam</a></h4>
+                                <h4><a>Entrance Exams</a></h4>
+                                <div class="text-warning" style="font-style:italic;">Coming Soon...</div>
                             <?php
                             }
                             ?>
-                            <h4 class="subheading">To enter our school</h4>
                         </div>
                         <div class="timeline-body">
                             <p class="text-muted">For JHS Jan 6th<br>For HS Feb 1st/3rd</p>
@@ -174,6 +173,52 @@ $fname = $_SESSION['fname'];
                     </div>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <!-- Articles -->
+
+    <section class="page-section bg-light" id="articles">
+
+        <div class="container-fluid col-10 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">What's NEW!</h2>
+            <h3 class="section-subheading text-muted">Check updates on this site!</h3>
+            <div class="col-10 w-75 mx-auto border border-dark rounded bg-white" style="height:150px; overflow:scroll;">
+                <?php
+                $article_list = $functionObj->read_articles();
+
+                foreach ($article_list as $row) :
+                    $id = $row['art_id'];
+                    $date = $row['art_date'];
+                ?>
+                    <div class="mt-2">
+                        <?php echo $row['art_date']; ?>
+                        <span style="font-weight:bold;"><?php echo "  " . $row['art_desc']; ?></span>
+
+                        <!-- NEW! or not -->
+                        <?php
+                        $today = date('Y-m-d');
+                        $time1 = new DateTime($date);
+                        $time2 = new DateTime($today);
+
+                        $interval = $time1->diff($time2);
+                        $day = $interval->d;
+
+                        if ($day < 7) {
+                            echo "<span class='text-danger'>NEW</span>";
+                        } else {
+                        }
+
+                        ?>
+                        <!-- NEW! or not -->
+
+
+                        <br>
+                        <hr>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
         </div>
     </section>
 
@@ -216,7 +261,7 @@ $fname = $_SESSION['fname'];
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">High School Course</h2>
+                <h2 class="section-heading text-uppercase">High School Courses</h2>
                 <h3 class="section-subheading text-muted">Our high school has three unique courses.</h3>
             </div>
             <div class="row">
@@ -242,7 +287,7 @@ $fname = $_SESSION['fname'];
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/gen.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/adjr.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">General Course</div>
@@ -257,7 +302,7 @@ $fname = $_SESSION['fname'];
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/adv.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/gen.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Advanced Course</div>
@@ -267,7 +312,7 @@ $fname = $_SESSION['fname'];
                 </div>
             </div>
             <div class="text-center mt-5">
-                <h2 class="section-heading text-uppercase">Junior High School Course</h2>
+                <h2 class="section-heading text-uppercase">Junior High School Courses</h2>
                 <h3 class="section-subheading text-muted">Our junior high school has two unique courses.</h3>
             </div>
             <div class="row">
@@ -278,7 +323,7 @@ $fname = $_SESSION['fname'];
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/genjr.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">General Course</div>
@@ -293,7 +338,7 @@ $fname = $_SESSION['fname'];
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/adv.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Advanced Course</div>
@@ -314,7 +359,7 @@ $fname = $_SESSION['fname'];
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="..." />
+                        <img class="mx-auto rounded-circle" src="assets/img/team/7.jpg" alt="..." />
                         <h4>Yutaka Namioka</h4>
                         <p class="text-muted">English & Web Developer</p>
                     </div>
@@ -328,15 +373,15 @@ $fname = $_SESSION['fname'];
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <img class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="..." />
+                        <h4>Job Cat</h4>
+                        <p class="text-muted">On-site supervisor</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">If you are interested in our school or this website, please feel free to contact us!</p>
+                    <p class="large text-muted">Tell us what you want. We'll make it!</p>
                 </div>
             </div>
         </div>
@@ -346,7 +391,7 @@ $fname = $_SESSION['fname'];
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">If you are interested in our school or this website, please feel free to contact us!</h3>
             </div>
             <!-- * * * * * * * * * * * * * * *-->
             <!-- * * SB Forms Contact Form * *-->
@@ -411,7 +456,7 @@ $fname = $_SESSION['fname'];
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2021</div>
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Yutaka Namioka 2021</div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
@@ -468,7 +513,7 @@ $fname = $_SESSION['fname'];
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">General Course</h2>
                                 <p class="item-intro text-muted">You can focus on studying, club, and other activities.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gen.jpg" alt="..." />
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/adjr.jpg" alt="..." />
                                 <p>Our alumni entered Tohoku University, joined national competitions, and became famous artists.</p>
                                 <ul class="list-inline">
                                     <li>
@@ -499,7 +544,7 @@ $fname = $_SESSION['fname'];
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Advanced Course</h2>
                                 <p class="item-intro text-muted">Let's study! That's it!</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/adv.jpg" alt="..." />
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gen.jpg" alt="..." />
                                 <p>If you want to excel in something, what you need first is STUDY!</p>
                                 <ul class="list-inline">
                                     <li>
@@ -530,7 +575,7 @@ $fname = $_SESSION['fname'];
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">General Course</h2>
                                 <p class="item-intro text-muted">Similar to public schools, but sophisticated.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/genjr.jpg" alt="..." />
                                 <p>You can study as if you were in public school, but our carriculum is special: Two more English classes and one more science class.</p>
                                 <ul class="list-inline">
                                     <li>
@@ -561,8 +606,8 @@ $fname = $_SESSION['fname'];
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Advanced Course</h2>
                                 <p class="item-intro text-muted">You will be able to make a presentation in English in three years.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                <p>Let's go to Singapore in the third grade, which make you opne your world.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/adv.jpg" alt="..." />
+                                <p>Let's go to Singapore in the third grade, which make you open your world.</p>
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Classes in a week:</strong>

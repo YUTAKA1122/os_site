@@ -23,7 +23,7 @@ $cart_id = $cart_data['cart_id'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update</title>
+    <title>Update an Event</title>
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -140,7 +140,7 @@ $cart_id = $cart_data['cart_id'];
                 </table>
                 <div class="row text-center">
                     <button type="submit" name="updateEventUI" class="btn btn-primary mt-3 col-6">UPDATE</button>
-                    <a href="eventlistUI.php" class="btn btn-dark mt-3 col-6">Back</a>
+                    <a href="eventlistUI.php" class="btn btn-dark mt-3 col-6">Reservation Page</a>
                     </form>
 
                 </div>

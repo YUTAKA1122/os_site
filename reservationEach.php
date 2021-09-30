@@ -9,7 +9,7 @@ $userReservelist = $functionObj->get_event_cart_items($item_id);
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Reservation Details</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

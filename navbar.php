@@ -18,6 +18,9 @@
                     <a href="reservationAdmin.php" class="nav-link">All Res</a>
                 </li>
                 <li class="nav-item">
+                    <a href="articles.php" class="nav-link">Articles</a>
+                </li>
+                <li class="nav-item">
                     <a href="logout.php" class="nav-link">Logout</a>
                 </li>
 

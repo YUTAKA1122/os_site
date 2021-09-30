@@ -115,6 +115,11 @@ if(isset($_POST['login'])){
 
     $functionObj->update_user($lname,$fname,$email,$id);
 
+}elseif(isset($_POST['updateArticle'])){
+    $art_desc = $_POST['art_desc'];
+    $id = $_POST['id'];
+ 
+    $functionObj->update_article($art_desc,$id);
 }
 
 

@@ -13,7 +13,7 @@ $actsOfEvent = $functionObj->read_activities($event_id);
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Activities</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,13 +42,14 @@ $actsOfEvent = $functionObj->read_activities($event_id);
             <div class="row">
                 <?php
                 if ($event_id == 2) {
-                    echo "<h1>Activity1</h1>";
+                    echo "<div class='display-5 text-center'>Please Choose Two Activities.</div>";
+                    echo "<h2>Activity1</h2>";
                     foreach ($actsOfEvent as $row) :
                         // $id = $row['item_id'];
                         $count1 = $functionObj->count_act1($item_id,$row['act_id']);
                         $capa1 = $functionObj->get_one_act($row['act_id']);
                 ?>
-                        <div class="col-4">
+                        <div class="col-4 col-lg-3">
                             <div class="card mt-3">
                                 <div class="card-header">
                                     <?php
@@ -78,7 +79,7 @@ $actsOfEvent = $functionObj->read_activities($event_id);
                         // $id = $row['item_id'];
                         $count2 = $functionObj->count_act2($item_id,$row['act_id'])
                     ?>
-                        <div class="col-4">
+                        <div class="col-4 col-lg-3">
                             <div class="card mt-3">
                                 <div class="card-header">
                                     <input type="radio" name="act2" id="" value=<?php echo $row['act_id']?> class="radio form-check-input"> <?php echo $row['aname']; ?><br>
@@ -95,12 +96,13 @@ $actsOfEvent = $functionObj->read_activities($event_id);
 
                     <?php
                 } else {
+                    echo "<div class='display-5 text-center'>Please Choose One Activity.</div>";
                     foreach ($actsOfEvent as $row) :
                         // $id = $row['item_id'];
                         $count1 = $functionObj->count_act1($item_id,$row['act_id']);
                         $capa1 = $functionObj->get_one_act($row['act_id']);
                 ?>
-                        <div class="col-4">
+                        <div class="col-4 col-lg-3">
                             <div class="card mt-3">
                                 <div class="card-header">
                                     <?php

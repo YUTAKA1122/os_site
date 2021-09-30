@@ -69,15 +69,39 @@ class Functions extends Database{
 
     }
 
+    function update_password($password,$id){
+        $sql = "UPDATE users SET password = '$password' WHERE user_id = '$id' ";
+        $result = $this->conn->query($sql);
+
+        if($result == TRUE){
+            echo "Your password updated successfully.";
+        }else{
+            die('ERROR: '.$this->conn->error);
+        }
+
+    }
+
+
     function delete_user($id){
         $sql = "DELETE FROM users WHERE user_id = '$id'";
         $result = $this->conn->query($sql);
         if($result == TRUE){
-            header('location:userlist.php');
+            echo"Your account was deleted successfully.";
         }else{
             die("ERROR: ".$this->conn->error);
         }
     }
+
+    function delete_self($id){
+        $sql = "DELETE FROM users WHERE user_id = '$id'";
+        $result = $this->conn->query($sql);
+        if($result == TRUE){
+            header('location:indexUser.php');
+        }else{
+            die("ERROR: ".$this->conn->error);
+        }
+    }
+
 
     function upload_userImg(){
     }
@@ -89,7 +113,6 @@ class Functions extends Database{
         if($result->num_rows == 1){
             return $result->fetch_assoc();
         }else{
-            header('location:userlist.php');
         }
 
     }
@@ -483,6 +506,73 @@ class Functions extends Database{
             }
 
         }
+
+
+        // articles
+
+        function read_articles(){
+            $sql = "SELECT * FROM articles ORDER BY art_id DESC";
+            $result = $this->conn->query($sql);
+    
+            if($result->num_rows>0){
+                $row = array();
+                while($rows = $result->fetch_assoc()){
+                    $row[] = $rows;
+                }
+                return $row;
+            }else{
+                return FALSE;
+            }
+        }
+    
+        function add_article($art_date,$art_desc){
+            $sql = "INSERT INTO articles(art_date,art_desc)VALUES('$art_date','$art_desc')";
+            $result = $this->conn->query($sql);
+            if($result == TRUE){
+                echo "<div class = 'alert alert-success mx-3'>";
+                echo "Your article posted successfully.";
+                echo "</div>";
+                }else{
+                die("ERROR: ".$this->conn->error);
+            }
+    
+        }
+
+        function get_one_article($id){
+            $sql = "SELECT * FROM articles WHERE art_id = '$id'";
+            $result = $this->conn->query($sql);
+    
+            if($result->num_rows == 1){
+                return $result->fetch_assoc();
+            }else{
+                header('location:admin.php');
+            }
+    
+        }
+    
+
+        function delete_article($id){
+            $sql = "DELETE FROM articles WHERE art_id = '$id'";
+            $result = $this->conn->query($sql);
+            if($result == TRUE){
+                header('location:admin.php');
+            }else{
+                die("ERROR: ".$this->conn->error);
+            }
+    
+        }
+
+        function update_article($art_desc, $id){
+            $sql = "UPDATE articles SET art_desc = '$art_desc' WHERE art_id = $id";
+            $result = $this->conn->query($sql);
+            if($result == TRUE){
+                header('location:admin.php');
+            }else{
+                die("ERROR: ".$this->conn->error);            
+            }
+    
+        }
+
 
     
     
