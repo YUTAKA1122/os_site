@@ -38,7 +38,7 @@
                         <div class="col"><input class="form-control" name="password" id="password" type="password" placeholder="Enter your password..." aria-label="Enter your password..." data-sb-validations="required,password" /></div>
                             <div class="col-auto"><button class="btn btn-primary" name="login" id="submitButton" type="submit">Login</button></div>
                             <h1 class="fst-italic lh-1 mt-4">Resister</h1>
-                <p class="mb-1">If you don't have any account, please make one or go back to <a href="indexUser.php">Top Page</a>.</p>
+                <p class="mb-1">If you don't have any account, please make one or go back to <a href="index.php">Top Page</a>.</p>
                             <a href="registerUser.php" class="col-auto btn btn-primary">Register</a>
 
 

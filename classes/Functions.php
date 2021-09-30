@@ -16,7 +16,7 @@ class Functions extends Database{
                 $_SESSION['lname'] = $row['lname'];
                 $_SESSION['fname'] = $row['fname'];
 
-                header('location:indexUser.php');
+                header('location:index.php');
                 
             }else{
                     header('location:admin.php');
@@ -96,7 +96,7 @@ class Functions extends Database{
         $sql = "DELETE FROM users WHERE user_id = '$id'";
         $result = $this->conn->query($sql);
         if($result == TRUE){
-            header('location:indexUser.php');
+            header('location:index.php');
         }else{
             die("ERROR: ".$this->conn->error);
         }

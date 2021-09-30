@@ -62,7 +62,7 @@ include 'navbarUI.php';
                     </table>
                     <div class="row text-center">
                         <button type="submit" name="updateSelf" class="btn btn-primary mt-3 col-6">UPDATE</button>
-                        <a href="indexUser.php" class="btn btn-dark mt-3 col-6">Back</a>
+                        <a href="index.php" class="btn btn-dark mt-3 col-6">Back</a>
                         <?php
                     if (isset($_POST['updateSelf'])) {
                         $lname = $_POST['lname'];

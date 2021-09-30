@@ -64,7 +64,7 @@ include 'navbarUI.php';
                         <input type="password" name="password" id="" class="form-control" placeholder="Put your password here.">
                         <button type="submit" name="selfDelete" class="btn btn-danger mt-3 col-6">Delete</button>
                     </form>                    
-                    <a href="indexUser.php" class="btn btn-dark  mt-3 col-6">Back</a>
+                    <a href="index.php" class="btn btn-dark  mt-3 col-6">Back</a>
 
                 </div>
                 <?php
