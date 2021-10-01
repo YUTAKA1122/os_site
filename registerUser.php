@@ -30,7 +30,7 @@
 
 
                 <h1 class="fst-italic lh-1 mt-4">Resister</h1>
-                <p class="mb-1">Please make your account below, or go back to <a href="index.php">Top Page</a>.</p>
+                <p class="mb-1">Please make your account below, or go back to <a href="index.php">Top Page.</a></p>
                 <form action="" method="post" id="register" data-sb-form-api-token="API_TOKEN">
                     <div class="input-group-newsletter">
                         <div class="row">

@@ -28,7 +28,7 @@ $account = $functionObj->get_one_user($user_id);
 
     <div class="container-fluid">
         <h1>Your Current Reservations</h1>
-        <table class="table text-center">
+        <table class="table table-striped text-center">
             <thead class="thead-dark">
                 <th>Event name</th>
                 <th>Date</th>
@@ -56,10 +56,9 @@ $account = $functionObj->get_one_user($user_id);
             </tbody>
         </table>
 
-        <hr>
 
         <h1>Your Account</h1>
-        <table class="table text-center">
+        <table class="table  text-center">
             <thead class="thead-dark">
                 <th>Family Name</th>
                 <th>First Name</th>
