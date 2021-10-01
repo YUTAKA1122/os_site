@@ -373,7 +373,7 @@ $fname = $_SESSION['fname'];
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="..." />
+                        <img class="mx-auto rounded-circle" src="assets/img/team/jobcat.jpg" alt="..." />
                         <h4>Job Cat</h4>
                         <p class="text-muted">On-site supervisor</p>
                     </div>
