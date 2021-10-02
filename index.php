@@ -203,9 +203,13 @@ $fname = $_SESSION['fname'];
 
                         $interval = $time1->diff($time2);
                         $day = $interval->d;
+                        $month = $interval->m;
 
                         if ($day < 7) {
+                            if($month == 0){
                             echo "<span class='text-danger'>NEW</span>";
+                            }else{                                
+                            }
                         } else {
                         }
 

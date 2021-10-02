@@ -32,14 +32,14 @@ $actsOfEvent = $functionObj->read_activities($event_id);
     <div class="container-fluid">
         <div class="col-10">
             <h1><?php echo $data['iname'] ?><br></h1>
-            <h1><?php echo $data['idate'] ?><br></h1>
+            <h1 class="d-inline"><?php echo $data['idate']."  " ?><a href="eventsUI.php?item_id=<?php echo $item_id?>" class = "btn border">Change Dates</a></h1> 
         </div>
 
         <form action="action.php" method="post">
             <input type="hidden" name="user_id" value =<?php echo $user_id ?> class="form-control">
             <input type="hidden" name="item_id" value=<?php echo $item_id?> class="form-control">
 
-            <div class="row">
+            <div class="row mt-5">
                 <?php
                 if ($event_id == 2) {
                     echo "<div class='display-5 text-center'>Please Choose Two Activities.</div>";
@@ -130,7 +130,7 @@ $actsOfEvent = $functionObj->read_activities($event_id);
                 } ?>
             </div>
             <div class="text-center">
-                        <button type="submit" name="reserve" class="btn btn-primary mt-3">RESERVE</button>
+                        <button type="submit" name="reserve" class="btn btn-primary mt-3 mb-5">RESERVE</button>
                     </div>
 
         </form>
